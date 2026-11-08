@@ -29,13 +29,14 @@ So I went back to the schematic and redesigned the component selection. I replac
 Once the revised schematic was ready, I moved on to the PCB layout. I wanted the board to reflect the Formula 1 inspiration, so I spent time working on its overall shape and refining the outline instead of simply going with a standard rectangular PCB.
 
 After establishing the board shape, I arranged the microcontroller, power management, sensor and motor driver sections. I then started routing the connections, paying attention to power distribution, signal connections and the placement of external connectors.
-![Uploading SCH_Schematic1_2-SENSORS_2026-11-08.png…]()
+
 
 After routing, I reviewed the overall layout and checked the component placement and connections against the schematic.
-![Uploading SCH_Schematic1_1-POWER_2026-11-08.png…]()
 
 ## What I Learned
 
 This project helped me understand that PCB design is about much more than connecting components. I learned to think about component accessibility, power distribution, circuit organisation and how a schematic translates into an actual physical board.
 
 One of my biggest takeaways was that a technically functional design should also be practical for someone else to build. That is what motivated me to revisit the original SMD-heavy design and make Apex-1 more beginner-friendly.
+<img width="3332" height="2362" alt="SCH_Schematic1_2-SENSORS_2026-11-08" src="https://github.com/user-attachments/assets/ea81d6df-6b83-4533-95d6-7ce9e9e7628f" />
+<img width="3332" height="2362" alt="SCH_Schematic1_1-POWER_2026-11-08" src="https://github.com/user-attachments/assets/c18323f0-2bc9-4d35-bdcd-b4e78f6603cd" />
