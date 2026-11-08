@@ -9,7 +9,7 @@ Apex-1 is a custom-designed, Formula 1-inspired line-following robot. The idea b
 | Project Name | Apex-1 |
 | Project By | Omer  |
 | Software | EasyEDA Pro |
-| Development Time | 13 Hours |
+| Development Time | 12 Hours |
 | Microcontroller | STM32F103RBT7 |
 
 ## About the Project
