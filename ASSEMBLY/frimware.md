@@ -1,2 +1,0 @@
-frimwware
-will update soon
