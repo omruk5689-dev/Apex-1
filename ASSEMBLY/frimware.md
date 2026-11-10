@@ -1,1 +1,2 @@
-frimwware will be uploaded soon
+frimwware
+will update soon
