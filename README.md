@@ -1,42 +1,51 @@
 # Apex-1
 ### F1-Inspired High-Speed Line-Following Robot
+
+Apex-1 is a custom-designed, Formula 1-inspired line-following robot built around a PCB designed from scratch. The goal is to bring the robot's main electronics together on a single compact board instead of relying on separate development boards and modules.
 <img width="2160" height="3022" alt="3D_PCB1_2026-11-08" src="https://github.com/user-attachments/assets/991eec8a-7ed5-4a28-9029-770e83538235" />
+It combines an STM32 microcontroller, motor control, power management and sensor interfaces in a custom-shaped PCB, with an emphasis on functionality, compactness and beginner-friendly assembly.
 
-Apex-1 is a custom-designed, Formula 1-inspired line-following robot. The idea behind this project was to build a fast and compact robot while designing its electronics from scratch, rather than relying on separate development boards and modules.
+## Technical Details
 
-| Project Details | Information |
+| Specification | Details |
 |---|---|
-| Project Name | Apex-1 |
-| Project By | Omer  |
-| Software | EasyEDA Pro |
+| Project | Apex-1 |
+| Designed by | Omer |
+| PCB Design Software | EasyEDA Pro |
 | Development Time | 12 Hours |
 | Microcontroller | STM32F103RBT7 |
+| Motor Driver | TB6612FNG |
+| Display | OLED |
+| Sensors | IR Sensors |
+| Power Management | Buck Converter |
+| PCB Design | Custom Formula 1-inspired PCB |
 
-## About the Project
+## Hardware Features
 
-I started by designing the complete circuit schematic in EasyEDA Pro. I first integrated the STM32 microcontroller and worked on its supporting circuitry, including decoupling capacitors, voltage connections, boot buttons and switches.
-
-After that, I developed the power management section using voltage regulators and buck-converter circuitry. I then added the line-following sensor interfaces, supporting resistors and connections to the microcontroller. Finally, I integrated the motor driver, battery input, motor connectors and other power-related components to bring all the major electronic sections together.
-
-## Making the Design Beginner-Friendly
-
-During my first design review, I realised that almost all the components I had selected were SMD. Although SMD components are great for compact designs, I wanted Apex-1 to be something beginners could also assemble and understand.
-
-So I went back to the schematic and redesigned the component selection. I replaced suitable SMD resistors and capacitors with through-hole alternatives, revisited the microcontroller and motor driver implementation, and checked the sensor circuitry, LEDs and supporting components. The goal was to make the PCB easier to solder, inspect and repair without compromising the intended functionality.
+- **STM32F103RBT7:** Main controller for processing sensor inputs and managing robot movement.
+- **TB6612FNG:** Dual motor driver for controlling the robot's motors.
+- **Buck Converter:** Steps down the battery voltage to the required operating voltage.
+- **IR Sensors:** Used to detect the line and provide feedback for navigation.
+- **OLED Display:** Provides a small interface for displaying information and debugging.
+- **Power Management:** Integrated voltage regulation and power distribution.
+- **User Controls:** Three onboard push buttons.
+- **Debug Interface:** SWD connections for programming and debugging the STM32.
+- **Custom PCB:** Formula 1-inspired board shape with integrated electronic sections.
 
 ## PCB Design
 
-Once the revised schematic was ready, I moved on to the PCB layout. I wanted the board to reflect the Formula 1 inspiration, so I spent time working on its overall shape and refining the outline instead of simply going with a standard rectangular PCB.
+Apex-1 features a custom Formula 1-inspired PCB silhouette instead of a conventional rectangular board. The elongated body and front-wing-inspired outline give it a distinctive appearance.
 
-After establishing the board shape, I arranged the microcontroller, power management, sensor and motor driver sections. I then started routing the connections, paying attention to power distribution, signal connections and the placement of external connectors.
+The board integrates the microcontroller, motor driver, power management and peripheral connections. I also wanted the design to be approachable for beginners, so I focused on using through-hole components wherever practical to make assembly, inspection and repairs easier.
+
+## Short Build Guide
+
+1. **PCB Assembly:** Solder the STM32, motor driver, buck converter and supporting components onto the PCB.
+2. **Power Setup:** Connect the battery input and verify the regulated voltage outputs before powering the other sections.
+3. **Connect Peripherals:** Attach the IR sensors, OLED display and motors to their respective connectors.
+4. **Programming:** Connect the SWD debug interface and flash the firmware onto the STM32.
+5. **Testing:** Check sensor readings, OLED output and individual motor operation before testing the complete line-following system.
 
 
-After routing, I reviewed the overall layout and checked the component placement and connections against the schematic.
-
-## What I Learned
-
-This project helped me understand that PCB design is about much more than connecting components. I learned to think about component accessibility, power distribution, circuit organisation and how a schematic translates into an actual physical board.
-
-One of my biggest takeaways was that a technically functional design should also be practical for someone else to build. That is what motivated me to revisit the original SMD-heavy design and make Apex-1 more beginner-friendly.
 <img width="3332" height="2362" alt="SCH_Schematic1_2-SENSORS_2026-11-08" src="https://github.com/user-attachments/assets/ea81d6df-6b83-4533-95d6-7ce9e9e7628f" />
 <img width="3332" height="2362" alt="SCH_Schematic1_1-POWER_2026-11-08" src="https://github.com/user-attachments/assets/c18323f0-2bc9-4d35-bdcd-b4e78f6603cd" />
