@@ -10,7 +10,7 @@ An important part of this project was rethinking my initial design. I originally
 
 ---
 
-## 1. Initial Schematic Development
+## 1. Initial Schematic Development worked alomst 1hr 
 
 I started the project by developing the electronic architecture in EasyEDA Pro.
 
@@ -28,7 +28,7 @@ I divided the circuit into several sections:
 
 This gave me a clearer understanding of how the complete robot would be structured and helped me develop the schematic in an organised way.
 
-## 2. STM32 Microcontroller Integration
+##  STM32 Microcontroller Integration
 <img width="1536" height="868" alt="Screenshot 2026-11-08 141819" src="https://github.com/user-attachments/assets/0afacb5b-2bde-46f6-a9e7-50024c03bccb" />
 
 The first major component I worked on was the STM32 microcontroller.
@@ -43,7 +43,7 @@ Once the basic MCU circuit was established, I started connecting the required si
 
 The microcontroller would act as the central processing unit, receiving information from the sensors and providing control signals to the motor driver.
 
-## 3. Power Management and Voltage Regulation
+## Power Management and Voltage Regulation
 
 After completing the initial microcontroller section, I moved towards the power management circuitry.
 
@@ -56,7 +56,7 @@ The main objective was to establish an organised power distribution system for t
 I then connected the power-related sections and reviewed how the different components would receive their required supplies.
 <img width="1891" height="871" alt="Screenshot 2026-11-08 141529" src="https://github.com/user-attachments/assets/0d957acf-2ac9-4540-bae3-ab25842938b1" />
 
-## 4. Sensor Circuit Development
+## 2. Sensor Circuit Development 1 hour
 
 The next stage was developing the line-following sensor section.
 
@@ -69,7 +69,7 @@ I then connected the sensor signals to the appropriate microcontroller pins.
 I also reviewed the supporting circuitry to ensure that the sensor section was properly integrated into the overall schematic.
 <img width="1046" height="567" alt="Screenshot 2026-11-08 141439" src="https://github.com/user-attachments/assets/fafbfca5-ef30-4dac-ab9e-e5e2833c88fd" />
 
-## 5. Motor Driver and Power Output Section
+##  Motor Driver and Power Output Section
 
 Once the microcontroller and sensor sections were established, I moved towards the motor control circuitry.
 
@@ -85,7 +85,7 @@ At this point, the initial schematic contained the major electronic sections req
 
 ---
 
-## 6. First Design Review: Making the PCB Beginner-Friendly
+## 3. First Design Review: Making the PCB Beginner-Friendly 2 hour
 
 After completing the initial schematic, I started reviewing the component selection.
 
@@ -101,7 +101,7 @@ So, instead of continuing with the original component selection, I decided to re
 
 This meant reconsidering the component packages and replacing suitable SMD components with through-hole alternatives.
 
-## 7. Component Redesign and Through-Hole Conversion
+## 4 Component Redesign and Through-Hole Conversion 3.5 hour
 
 This was one of the most important stages of the project.
 
@@ -143,7 +143,7 @@ I wanted to ensure that the indicator section remained properly integrated into 
 
 After completing these changes, I went through the component selection again to check that the updated packages and connections were consistent with the schematic.
 
-## 8. Revised Schematic Review
+## Revised Schematic Review
 
 Once the component redesign was complete, I returned to the schematic for another review.
 
@@ -165,7 +165,7 @@ After reviewing the revised schematic, I moved towards the physical PCB design.
 
 ---
 
-## 9. PCB Shape and Layout Development
+## 5. PCB Shape and Layout Development 4 hour
 
 With the schematic ready, I started working on the actual PCB layout in EasyEDA Pro.
 
@@ -180,7 +180,7 @@ I considered the placement of the microcontroller, power management components, 
 After working through the overall shape and refining the board outline, I started arranging the components within the PCB.
 <img width="1552" height="858" alt="Screenshot 2026-11-08 141423" src="https://github.com/user-attachments/assets/df41f790-a208-4faa-8aec-5238be7a3b8f" />
 
-## 10. Component Placement
+##  Component Placement
 
 Once the board outline was established, I started placing the components.
 
@@ -192,7 +192,7 @@ I also considered the placement of the through-hole components because one of th
 
 This stage involved reviewing the arrangement multiple times and refining the component positions to achieve a cleaner overall layout.
 
-## 11. PCB Routing
+## PCB Routing
 
 After completing the component placement, I moved towards routing the PCB.
 
@@ -208,7 +208,7 @@ I wanted the final routing to be organised and consistent with the intended circ
 
 Once the connections were established, I reviewed the PCB layout and refined the routing where necessary.
 
-## 12. Final PCB Review
+## Final PCB Review
 
 After completing the routing, I reviewed the overall PCB design.
 
@@ -229,7 +229,7 @@ The final review focused on making sure that the PCB maintained the original des
 
 ---
 
-## 13. What I Learned
+##  What I Learned
 
 APEX ONE helped me understand that PCB development is not just about connecting components and making a circuit work.
 
