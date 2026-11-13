@@ -6,149 +6,98 @@ APEX-1 is a custom-designed, high-speed line-following robot inspired by Formula
 I wanted to build something beyond a conventional line-following robot. My goal was to design the electronics myself, understand how each section works and create a PCB that is not only functional but also approachable for people who are new to hardware development.
 
 
----
+## 15th of September 2026
 
-## 1. Initial Schematic Development
-**Date:** September 15, 2026  
-**Time Worked:** 1 Hour
+Started working on the electronics for APEX-1 in EasyEDA Pro. I wanted to design a custom PCB around the STM32F103RBT7 instead of using separate development boards and modules.
 
-I started by planning the complete electronic architecture in EasyEDA Pro. Before getting into the PCB layout, I wanted to make sure I had all the major sections figured out.
+I began with the main microcontroller circuit. Added its power and ground connections, decoupling capacitors, boot button and supporting circuitry. I also started planning the connections for the sensors, motor driver and other peripherals.
 
-I divided the design into different sections:
+After that, I worked on the power management section. Added the battery input, voltage regulation and buck converter circuitry to provide the required power to the different sections of the board.
 
-- Main microcontroller and supporting circuitry.
-- Power management and voltage regulation.
-- Line-following sensor interfaces.
-- Motor driver and motor connections.
-- Battery input and power distribution.
-- Boot, reset and control switches.
-- LEDs and status indicators.
+I then started developing the line-following sensor interfaces, including their signal connections and supporting resistors. I also worked on the motor driver section, adding the connections for controlling two DC motors.
 
-This gave me a basic structure to work with and helped me understand how all the different sections would connect.
+**Issue I faced:** During the initial design, I realised that most of my selected components were SMD. This could make the board difficult for beginners to assemble, especially without proper soldering equipment. I decided to revisit the component selection before moving further with the PCB.
 
-### STM32 Microcontroller Integration
-
-The first major part of the schematic was the STM32F103RBT7.
-
-I added the microcontroller and started working on its supporting circuitry, including decoupling capacitors, power connections, ground connections and control signals.
-
-I also included the boot button and switches needed for programming and basic hardware control.
-
-The STM32 would be the main controller of APEX-1, handling sensor inputs and sending the necessary signals to the motor driver.
-<img width="1593" height="648" alt="Screenshot 2026-11-13 115317" src="https://github.com/user-attachments/assets/647e9065-2c4a-4487-91af-66d1d2e1981c" />
+<img width="1593" height="648" alt="Screenshot 2026-11-13 115317" src="https://github.com/user-attachments/assets/ac841a2c-a310-4a63-9257-08f1f3f405a8" />
+<img width="1487" height="652" alt="Screenshot 2026-11-13 115331" src="https://github.com/user-attachments/assets/e0f4e3d0-7401-4231-b6ae-5b8d5a7153ce" />
 
 
-### Power Management
-
-I also started planning the power section, including the buck converter, voltage regulation and battery input.
-
-Since the board contains several different electronic sections, I wanted to keep the power distribution organised and provide the required supply voltages to the controller and peripherals.
+**Total time spent: 2 hours**
 
 ---
 
-## 2. Sensor Circuit Development
-**Date:** September 15, 2026  
-**Time Worked:** 1 Hour
+## 15th of September 2026
 
-Next, I worked on the line-following sensor interfaces.
+Spent more time reviewing the schematic and making changes to the original component selection.
 
-Since the main purpose of APEX-1 is to follow a track, the sensor section is one of the most important parts of the design.
+I went through the different sections and started identifying components that could be replaced with through-hole alternatives. I focused mainly on resistors, capacitors, LEDs and suitable supporting components used in the sensor and control circuits.
 
-I added the sensor connections and their supporting resistors, then connected the signal lines to the STM32.
+I also revisited the STM32 and motor driver sections to review their connections and component arrangements. The idea was to make the board easier to solder, inspect and repair without changing the intended functionality.
 
-I also reviewed the connections to make sure the sensor section would fit properly into the overall circuit.
+After making the changes, I checked the power connections, sensor signals, motor outputs, switches and supporting circuitry again.
+
+**Issue I faced:** Finding suitable through-hole alternatives was not always straightforward. I had to consider component availability, package dimensions and whether the replacement would work with the existing circuit.
+
+<img width="1907" height="817" alt="Screenshot 2026-11-13 134846" src="https://github.com/user-attachments/assets/bcff613b-50e7-459b-b947-39af7e983098" />
+<img width="1915" height="851" alt="Screenshot 2026-11-13 134829" src="https://github.com/user-attachments/assets/24326d23-ddc3-4800-ae6c-6b0269511f12" />
 
 
-
-<img width="1487" height="652" alt="Screenshot 2026-11-13 115331" src="https://github.com/user-attachments/assets/ce591373-d107-4330-bbfe-24a6939e1868" />
-
-After the sensor section, I moved on to the motor control circuitry.
-
-I added the motor driver IC, along with the connections for controlling two DC motors. This section also included the motor output connectors, battery connections and supporting components.
-
-I wanted the motor control section to be properly integrated with the STM32 rather than relying on a separate motor driver module.
-
-By this point, the schematic had the main electronic sections needed for the robot.
+**Total time spent: 2 hours**
 
 ---
 
-## 3. First Design Review: Making It Beginner-Friendly
-**Date:** September 15, 2026  
-**Time Worked:** 2 Hours
+## 4th of October 2026
 
-After getting the initial schematic together, I went back and reviewed my component selection.
+Started working on the actual PCB layout in EasyEDA Pro.
 
-That's when I noticed that almost everything I had selected was SMD.
+Since APEX-1 is inspired by Formula 1 cars, I didn't want to go with a standard rectangular PCB. I started experimenting with the board outline to give it an elongated racing-car-inspired shape, with a wider front section.
 
-SMD components are great for compact designs, but they can be a little difficult for someone just getting started with soldering and PCB assembly.
+Once I was happy with the general outline, I started placing the major components. I worked on arranging the STM32, power management circuitry, motor driver and sensor connections within the available space.
 
-I didn't really want APEX-1 to become a project that only people with specialised soldering equipment could assemble.
+I also considered where the external connectors and through-hole components should go so they would remain accessible during assembly.
 
-So I decided to revisit the design and see which components I could replace with through-hole alternatives without changing the intended functionality.
+**Issue I faced:** The custom PCB shape made component placement a little more challenging. I had to keep checking the available space and moving components around to avoid an overcrowded layout.
 
-This meant going through the schematic again and reconsidering the component packages rather than simply continuing with the original design.
+<img width="1552" height="858" alt="Screenshot 2026-11-08 141423" src="https://github.com/user-attachments/assets/71baeaa3-2037-4baa-8a84-dbf93ce5debf" />
 
----
 
-## 4. Component Redesign and Through-Hole Conversion
-**Date:** September 15, 2026  
-**Time Worked:** 3.5 Hours
-
-This took longer than I initially expected because I had to review the different sections individually.
-
-I started with the passive components, replacing suitable SMD resistors and capacitors with through-hole versions.
-
-I also revisited the microcontroller, motor driver and sensor sections to check their component selections and supporting circuitry.
-
-### Resistors and Capacitors
-
-I went through the resistors and capacitors used across the different sections and looked for suitable through-hole alternatives.
-
-The main idea was to make commonly handled components easier to solder and replace.
-
-### Microcontroller and Motor Driver
-
-I reviewed the STM32 and motor driver sections, including their supporting connections and component arrangements.
-
-I wanted to keep the main control circuitry organised while making the overall design more practical to assemble.
-
-### Sensor Components and LEDs
-
-I also revisited the sensor circuitry, supporting resistors and LED indicators.
-
-I checked which components could be changed to through-hole packages while keeping the intended connections and functionality.
-<img width="1891" height="871" alt="Screenshot 2026-11-08 141529" src="https://github.com/user-attachments/assets/578088fc-2138-48bc-8351-116090a64d73" />
-
-### Revised Schematic Review
-
-After making the changes, I went through the schematic again.
-
-I checked the power connections, sensor interfaces, motor driver signals, switches, LEDs and the different supporting components.
-
-I wanted to make sure that the component changes hadn't introduced any inconsistencies.
-
-Once I was satisfied with the revised schematic, I moved on to the PCB layout.
+**Total time spent: 2 hours**
 
 ---
 
-## 5. PCB Shape and Layout Development
-**Date:** October 4, 2026  
-**Time Worked:** 4 Hours
+## 4th of October 2026
 
-This was probably the most visually interesting part of the project.
+Continued working on the PCB layout, mainly focusing on routing.
 
-Since APEX-1 is inspired by Formula 1 cars, I didn't want to use a regular rectangular PCB. I wanted the board itself to reflect the design of an F1 car.
+I started connecting the components according to the schematic, working through the microcontroller, power management, sensor and motor driver sections.
 
-I started working on the PCB outline in EasyEDA Pro, experimenting with the overall shape and how the different sections could fit inside it.
+I also routed the battery input, motor outputs and other external connections. While routing, I tried to keep the power and signal connections organised and make the overall layout easier to follow.
 
-The board has an elongated body with a wider front-wing-inspired section, giving it a more racing-inspired appearance.
+After completing the main routing, I went back through the board and reviewed the component positions and connections against the schematic.
 
-Of course, getting the shape right wasn't just about appearance. I also had to consider the available space for the microcontroller, power circuitry, motor driver and external connections.
+**Issue I faced:** Routing around the custom board outline while keeping the connections organised took some adjustment. I had to revisit a few component positions and routing paths to make better use of the available space.
+<img width="1870" height="797" alt="Screenshot 2026-11-13 135119" src="https://github.com/user-attachments/assets/24d718b6-0659-4567-a810-a58e44c88550" />
+<img width="1875" height="800" alt="Screenshot 2026-11-13 135130" src="https://github.com/user-attachments/assets/9b7dcb9f-4b02-4da6-97cf-951065d63d00" />
+
+
+**Total time spent: 2 hours**
+
+---
+
+## 4th of October 2026
+
+Spent the final part of this work session reviewing the overall PCB design.
+
+I checked the board outline, component placement, routing and external connectors. I also looked at the 3D PCB view to get a better idea of how the actual board would look once manufactured.
+
+I went back to the schematic and compared the different connections with the PCB layout, particularly the STM32, power section, sensor interfaces and motor driver.
+
+I also checked whether the through-hole component selection was reflected properly in the physical layout.
+
+The main PCB layout was now in place, with the major electronic sections arranged on the custom Formula 1-inspired board.
+
+**Issue I faced:** I needed to make sure that the custom shape didn't compromise component accessibility or the routing. Reviewing the 3D view helped me look at the design from a more physical perspective.
 <img width="2160" height="2667" alt="PCB_PCB1_2026-11-08" src="https://github.com/user-attachments/assets/16922c83-be82-4bac-9cde-77b6e7bb999c" />
-
-
-
-
 
 
 <img width="1046" height="567" alt="Screenshot 2026-11-08 141439" src="https://github.com/user-attachments/assets/fafbfca5-ef30-4dac-ab9e-e5e2833c88fd" />
@@ -157,7 +106,9 @@ Of course, getting the shape right wasn't just about appearance. I also had to c
 
 
 
+**Total time spent: 4 hours**
 
+---
 
 
 
