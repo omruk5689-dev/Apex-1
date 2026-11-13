@@ -4,17 +4,6 @@
 APEX-1 is a custom-designed, high-speed line-following robot inspired by Formula 1 racing cars. The project focuses on developing a dedicated PCB that brings together the microcontroller, power management, sensor interfaces and motor control circuitry into one integrated platform.
 
 I wanted to build something beyond a conventional line-following robot. My goal was to design the electronics myself, understand how each section works and create a PCB that is not only functional but also approachable for people who are new to hardware development.
-# APEX-1
-### F1-Inspired High-Speed Line-Following Robot
-
-**Total Hours Worked: 12 Hours**
-
-APEX-1 is a custom-designed, Formula 1-inspired line-following robot. The main idea behind this project is to develop a dedicated PCB that brings the robot's major electronics together on a single board, including the STM32 microcontroller, power management, sensor interfaces and motor control.
-
-I wanted to build something beyond a conventional line-following robot. Instead of using separate development boards and modules, I wanted to design the electronics myself and understand how everything fits together.
-
-One thing I also wanted to focus on was making the design beginner-friendly. My initial component selection was mostly SMD-based, but after reviewing it, I decided to replace suitable components with through-hole alternatives wherever practical. This would make the board easier to solder, inspect and repair.
-
 
 
 ---
