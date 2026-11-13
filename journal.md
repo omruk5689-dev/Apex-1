@@ -56,7 +56,7 @@ The main objective was to establish an organised power distribution system for t
 I then connected the power-related sections and reviewed how the different components would receive their required supplies.
 <img width="1891" height="871" alt="Screenshot 2026-11-08 141529" src="https://github.com/user-attachments/assets/0d957acf-2ac9-4540-bae3-ab25842938b1" />
 
-## 2. Sensor Circuit Development 1 hour
+## 2. Sensor Circuit Development 1 hour sep 15 2026
 
 The next stage was developing the line-following sensor section.
 
@@ -85,7 +85,7 @@ At this point, the initial schematic contained the major electronic sections req
 
 ---
 
-## 3. First Design Review: Making the PCB Beginner-Friendly 2 hour
+## 3. First Design Review: Making the PCB Beginner-Friendly 2 hour sep 15 2026
 
 After completing the initial schematic, I started reviewing the component selection.
 
@@ -101,7 +101,7 @@ So, instead of continuing with the original component selection, I decided to re
 
 This meant reconsidering the component packages and replacing suitable SMD components with through-hole alternatives.
 
-## 4 Component Redesign and Through-Hole Conversion 3.5 hour
+## 4 Component Redesign and Through-Hole Conversion 3.5 hour sep 15 2026
 
 This was one of the most important stages of the project.
 
@@ -180,7 +180,7 @@ I considered the placement of the microcontroller, power management components, 
 After working through the overall shape and refining the board outline, I started arranging the components within the PCB.
 <img width="1552" height="858" alt="Screenshot 2026-11-08 141423" src="https://github.com/user-attachments/assets/df41f790-a208-4faa-8aec-5238be7a3b8f" />
 
-##  Component Placement
+##  Component Placement  oct4 2026
 
 Once the board outline was established, I started placing the components.
 
