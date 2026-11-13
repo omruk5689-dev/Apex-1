@@ -10,7 +10,7 @@ An important part of this project was rethinking my initial design. I originally
 
 ---
 
-## 1. Initial Schematic Development worked alomst 1hr 
+## 1. Initial Schematic Development worked alomst 1hr sep 15 2026
 
 I started the project by developing the electronic architecture in EasyEDA Pro.
 
@@ -165,7 +165,7 @@ After reviewing the revised schematic, I moved towards the physical PCB design.
 
 ---
 
-## 5. PCB Shape and Layout Development 4 hour
+## 5. PCB Shape and Layout Development 4 hour oct4 2026
 
 With the schematic ready, I started working on the actual PCB layout in EasyEDA Pro.
 
